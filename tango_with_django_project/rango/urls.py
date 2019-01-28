@@ -3,8 +3,6 @@ from rango import views
 
 
 urlpatterns = [
-
-
     url(r'^$', views.index, name='index'),
     url(r'about/$', views.about, name='about'),
     url(r'^add_category/$', views.add_category, name='add_category'),
@@ -17,4 +15,5 @@ urlpatterns = [
     url(r'^register/$',
         views.register,
         name='register'), # New pattern!
+    url(r'^login/$', views.user_login, name='login'),
 ]
